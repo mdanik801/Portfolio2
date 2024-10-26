@@ -3,8 +3,36 @@
 import dataanlyticimg from "../../assets/project Image/DATA ANALYTICS.png";
 import ecom from "../../assets/project Image/chepshop.png";
 import qrgenimg from "../../assets/project Image/qrgenimg.png";
+import portfolioimg from "../../assets/project Image/portfolioimg.png";
 
 export const projects = [
+   {
+      title: "My Portfolio",
+      description:
+         "My Portfoliois an interactive platform displaying selected projects, skills, and achievements. Designed for easy navigation, it offers visitors a quick, insightful look into my professional journey, showcasing expertise across various fields. Perfect for clients and recruiters, this portfolio streamlines access to project details and contact options, supporting professional growth and personal branding",
+      technology: [
+         "REACT JS",
+         "TALWIND CSS",
+         "React Router",
+         "React Type Animation",
+         "Animate On Scroll Library",
+         "Aceternity UI",
+         "framer motion react",
+         "Three.js – JavaScript 3D Library",
+         "EmailJS",
+         " React Hook From",
+         "Git Hub",
+         "Vercel",
+      ],
+      sourcecode: [
+         {
+            livelink: "https://portfoliomdanik.netlify.app/",
+            frontend: "https://github.com/mdanik801/Portfolio",
+            backend: "",
+         },
+      ],
+      content: portfolioimg,
+   },
    {
       title: "QR Code Generator",
       description:

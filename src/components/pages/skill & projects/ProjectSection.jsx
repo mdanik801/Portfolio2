@@ -12,7 +12,7 @@ const style = {
    page_title: "text-3xl font-bold text-center mb-8",
    img_box: "w-full h-48 object-cover rounded-md mb-4",
    info_box:
-      "bg-black/20 flex flex-col justify-between min-h-[80vh] h-auto p-5 rounded-md shadow-md transition-transform transform hover:scale-105 duration-500",
+      "bg-black/20 flex flex-col justify-between min-h-[90vh] h-auto p-5 rounded-md shadow-md transition-transform transform hover:scale-105 duration-500",
    contact_btn:
       "mx-2 text-center p-2 bg-black text-white lg:text-[0.9rem] text-[0.6rem] font-Acme font-semibold text-shadow-lg rounded-lg hover:bg-gray-800 hover:text-white duration-300",
 };
