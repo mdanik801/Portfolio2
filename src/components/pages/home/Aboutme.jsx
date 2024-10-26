@@ -5,10 +5,10 @@ import myimg from "../../../assets/image/myimg.png";
 import { contact_button } from "../../information/informaiotn";
 
 const style = {
-   page_body: "m-0 p-5 my-[-9vh]  bg-white w-full min-h-screen flex flex-col items-center",
+   page_body: "m-0 p-5 mt-[-9vh]  bg-white w-full min-h-screen flex flex-col items-center",
    page_title: "m-2 font-bold lg:text-[2.5rem] text-[2rem] font-Acme text-shadow-xl animate-pulse",
    deatil_box:
-      "relative w-full m-4 flex flex-col lg:flex-row text-gray-800 rounded-lg shadow-lg  lg:p-[10vh] p-[4vh] animate-float duration-300 overflow-hidden",
+      "relative w-full m-4 flex flex-col lg:flex-row text-gray-800 rounded-lg border shadow-lg  lg:p-[10vh] p-[4vh] animate-float duration-300 overflow-hidden",
    img: "w-[40vh] h-[40vh] sm:w-[50vh] sm:h-[50vh] m-2 border-2 border-black/60 bg-gray-400 backdrop-filter backdrop-blur-md bg-opacity-10 rounded-xl",
    info_box: "flex flex-col justify-center items-center mx-4 text-center lg:text-left",
    contact_btn: "flex flex-wrap justify-center mt-6",

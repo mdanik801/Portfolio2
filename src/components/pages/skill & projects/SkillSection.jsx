@@ -4,9 +4,10 @@ import "aos/dist/aos.css";
 import { skillsInfo } from "../../information/informaiotn";
 
 const style = {
-   container: "m-0 p-5 bg-white w-full min-h-screen flex flex-col items-center",
+   container: "m-0  p-5 bg-white w-full min-h-screen flex flex-col items-center",
    title: "m-2 font-bold lg:text-[2.5rem] text-[2rem] font-Acme text-shadow-xl animate-pulse",
-   skillSection: "w-full m-4 flex flex-col text-gray-800 rounded-lg shadow-lg  p-4 overflow-hidden",
+   skillSection:
+      "w-full m-4 flex flex-col text-gray-800 rounded-lg border shadow-lg  p-4 overflow-hidden",
    skillCategory: "flex flex-col w-full mb-4",
    skillName: "text-lg font-semibold text-slate-900 mb-2",
    skillList: "flex flex-wrap justify-start",
