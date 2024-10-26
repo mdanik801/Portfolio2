@@ -4,6 +4,8 @@ import HeroSection from "./HeroSection";
 import Aboutme from "./Aboutme";
 import SkillSection from "../skill & projects/SkillSection";
 import ProjectSection from "../skill & projects/ProjectSection";
+import Contact from "../contact/Contact";
+import Footer from "../header&footer/Footer";
 
 export default function Home() {
    return (
@@ -13,6 +15,8 @@ export default function Home() {
          <Aboutme />
          <SkillSection />
          <ProjectSection />
+         <Contact />
+         <Footer />
       </div>
    );
 }

@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from "react";
-import Slider from "react-slick"; // Import Slider from react-slick
-import { projects } from "../../information/informaiotn"; // Adjust the import path as needed
+import Slider from "react-slick";
+import { projects } from "../../information/informaiotn";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import AOS from "aos"; // Import AOS
-import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const style = {
-   page_body: "bg-gray-100 py-10",
+   page_body: "bg-white py-10 ",
    title: "m-2 font-bold lg:text-[2.5rem] text-[2rem] font-Acme text-shadow-xl animate-pulse",
    page_title: "text-3xl font-bold text-center mb-8",
    img_box: "w-full h-48 object-cover rounded-md mb-4",
-   img: "", // You can specify additional styles for the image if needed
    info_box:
-      "bg-black/20 flex flex-col justify-between h-auto p-5 rounded-md shadow-md transition-transform transform hover:scale-105 duration-500",
+      "bg-black/20 flex flex-col justify-between min-h-[80vh] h-auto p-5 rounded-md shadow-md transition-transform transform hover:scale-105 duration-500",
    contact_btn:
       "mx-2 text-center p-2 bg-black text-white lg:text-[0.9rem] text-[0.6rem] font-Acme font-semibold text-shadow-lg rounded-lg hover:bg-gray-800 hover:text-white duration-300",
 };
@@ -48,7 +47,7 @@ export default function ProjectSection() {
    };
 
    return (
-      <section className={style.page_body}>
+      <section id="project" className={style.page_body}>
          <div className="container mx-auto px-4">
             <div className="flex justify-start w-full">
                <span data-aos="fade-right" className={style.title}>
@@ -56,7 +55,9 @@ export default function ProjectSection() {
                   <span className="text-slate-700">ject</span>
                </span>
             </div>
-            <Slider {...settings}>
+            <Slider
+               {...settings}
+               className=" border-2 border-black/35 rounded-lg shadow-inner  shadow-black overflow-hidden">
                {projects.map((project, index) => (
                   <ProjectCard key={index} project={project} />
                ))}
@@ -76,7 +77,6 @@ const ProjectCard = ({ project }) => {
    return (
       <div className={style.info_box} data-aos="fade-up">
          {" "}
-         {/* Add AOS attribute */}
          <div className="flex-grow">
             <img src={project.content} alt={project.title} className={style.img_box} />
             <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
